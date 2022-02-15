@@ -1,11 +1,11 @@
 sendEmail = () => {
   Email.send({
     Host: "smtp.gmail.com",
-    Username: "test.epiclogictech@gmail.com ",
-    Password: "P@ssword.google.123",
-    To: "test.epiclogictech@gmail.com",
+    Username: "testmail.epiclogictech@gmail.com ",
+    Password: "aawuhukqhaddyait",
+    To: "testmail.epiclogictech@gmail.com",
     From: document.getElementById("email").value,
-    Subject: document.getElementById("New Contact Form Enquiry"),
+    Subject: "New Contact Form Enquiry",
     Body: `Name: ${document.getElementById("name").value}
     Email: ${document.getElementById("email").value}
     Phone no: ${document.getElementById("phone").value}
