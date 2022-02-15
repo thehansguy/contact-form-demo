@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta stuff -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- links -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- deferred scripts -->
+    <script
+      src="https://smtpjs.com/v3/smtp.js"
+      integrity="sha384-BlzKAJKzmAhlBrGVWsQWgiGHT6fOW6f8bcsC6/QqTQdTHTWjXJndLfcSqbanRP9e"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+
+    <title>Contact Form using SMTPJS- Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <form onsubmit="sendEmail(); reset(); return false; ">
+        <h3>GET IN TOUCH</h3>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          required
+        />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Your email address"
+          required
+        />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Your phone number"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          rows="4"
+          placeholder="How can we help you?"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
